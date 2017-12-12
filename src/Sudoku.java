@@ -123,16 +123,19 @@ public class Sudoku {
 		int x = key.nextInt();
 		while (x > 8 || x < 0) {
 			System.out.println("Please enter a value between 0 and 8: ");
+			x = key.nextInt();
 		}
 		System.out.println("Enter a y coordinate: ");
 		int y = key.nextInt();
 		while (y > 8 || y < 0) {
 			System.out.println("Please enter a value between 0 and 8: ");
+			y = key.nextInt();
 		}
 		System.out.println("Enter your value (a number between 1 - 9): ");
 		int value = key.nextInt();
 		while (value > 9 || value < 1) {
 			System.out.println("Please enter a value between 1 and 9: ");
+			value = key.nextInt();
 		}
 		if (!validMove(x, y, value)) {
 			System.out.println("That was not a valid move");
